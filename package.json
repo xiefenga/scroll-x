@@ -2,8 +2,8 @@
   "name": "@0x1461a0/scroll-x",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
   "keywords": [
     "react",
     "react-component",
@@ -16,7 +16,7 @@
   "author": "xiefeng",
   "license": "MIT",
   "files": [
-    "dist"
+    "lib"
   ],
   "scripts": {
     "start": "vite",

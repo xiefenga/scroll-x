@@ -2,7 +2,8 @@
   "name": "@0x1461a0/scroll-x",
   "version": "0.0.0",
   "description": "",
-  "main": "dist/main.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "keywords": [
     "react",
     "react-component",

@@ -7,9 +7,10 @@
     "moduleResolution": "node",
     "baseUrl": "./",
     "declaration": true,
-    "declarationMap": true,
+//    "declarationMap": true,
+    "emitDeclarationOnly": true,
     "sourceMap": true,
-    "outDir": "./",
+    "outDir": "./lib",
     "removeComments": true,
     "isolatedModules": true,
     "esModuleInterop": true,
@@ -17,12 +18,12 @@
     "strict": true,
     "skipLibCheck": true,
     "paths": {
-      "@/*":[
+      "@/*": [
         "src/*"
       ]
     }
   },
-  "exclude": [
-    "node_modules"
+  "include": [
+    "src"
   ],
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { createRoot } from 'react-dom/client'
-import ScrollX from '@/components/ScrollX'
+import ScrollX from '../'
 
 const CardBox = styled.div`
   width: 100px;

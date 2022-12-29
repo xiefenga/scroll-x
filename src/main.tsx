@@ -1,20 +1,20 @@
-export * from './components/ScrollX'
 
-export { 
-  default as ScrollX 
+export {
+  default,
+  default as ScrollX
 } from './components/ScrollX'
 
-export { 
-  default as ScollXContext 
+export {
+  default as ScollXContext
 } from './context'
 
-export { 
+export {
   useScrollXContext,
   useResetScroll,
   useUpdateScrollState
 } from './hook'
 
-export type { 
+export type {
   ScrollXProps,
   ScollXContextValue
 } from '@/types/component'

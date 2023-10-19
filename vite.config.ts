@@ -7,7 +7,7 @@ import react from '@vitejs/plugin-react'
 const __filename = fileURLToPath(import.meta.url)
 
 export default defineConfig({
-  plugins: [react(), dts()],
+  plugins: [dts(), react()],
   resolve: {
     alias: {
       '@': resolve(__filename, '../src'),

@@ -1,5 +1,4 @@
 import React from 'react'
-import classNames from 'classnames'
 import { useRef, useState, useEffect } from 'react'
 
 import ScollXContext from '@/context'
@@ -81,8 +80,8 @@ const ScrollX: React.FC<ScrollXEnhancedProps> = (props) => {
 
   return (
     <ScollXContext.Provider value={contextValue}>
-      <ScrollXContainer {...containerProps}>
-        <div className={classNames('scroll-x', className)} style={style}>
+      <ScrollXContainer style={style} className={className} {...containerProps}>
+        <div className='scroll-x'>
           <div className='pre-button' onClick={scrollPrev}>
             {leftArraw}
           </div>

@@ -1,8 +1,4 @@
-
-export {
-  default,
-  default as ScrollX
-} from './components/ScrollX'
+export * from './components/ScrollX'
 
 export {
   default as ScollXContext

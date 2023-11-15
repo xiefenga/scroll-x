@@ -1,7 +1,7 @@
 export { default } from './components/ScrollX'
 
 export {
-  default as ScollXContext
+  default as ScrollXContext
 } from './context'
 
 export {
@@ -12,5 +12,5 @@ export {
 
 export type {
   ScrollXProps,
-  ScollXContextValue
+  ScrollXContextValue 
 } from '@/types/component'

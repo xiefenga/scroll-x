@@ -1,11 +1,11 @@
 import { createContext } from 'react'
-import { ScollXContextValue } from '@/types/component'
+import { ScrollXContextValue } from '@/types/component'
 
 const NOOP = () => { }
 
-const ScollXContext = createContext<ScollXContextValue>({
+const ScrollXContext = createContext<ScrollXContextValue>({
   reset: NOOP,
   updateScrollState: NOOP,
 })
 
-export default ScollXContext
+export default ScrollXContext

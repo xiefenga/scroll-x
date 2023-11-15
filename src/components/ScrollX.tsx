@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRef, useState, useEffect } from 'react'
 
-import ScollXContext from '@/context'
+import ScrollXContext from '@/context'
 import { EnhanceProps } from '@/types/util'
 import { ScrollXProps } from '@/types/component'
 import ScrollXContainer from '@/components/ScrollXContainer'
@@ -15,8 +15,8 @@ const ScrollX: React.FC<ScrollXEnhancedProps> = (props) => {
     style = {},
     blockWith,
     children,
-    leftArraw,
-    rightArraw,
+    leftArrow: leftArrow,
+    rightArrow: rightArrow,
     className = '',
   } = props
 
@@ -78,12 +78,13 @@ const ScrollX: React.FC<ScrollXEnhancedProps> = (props) => {
     nextVisible,
   }
 
+  // TODO: add Resize Observer
   return (
-    <ScollXContext.Provider value={contextValue}>
+    <ScrollXContext.Provider value={contextValue}>
       <ScrollXContainer style={style} className={className} {...containerProps}>
         <div className='scroll-x'>
           <div className='pre-button' onClick={scrollPrev}>
-            {leftArraw}
+            {leftArrow}
           </div>
           <div className='list-wrapper'>
             <div ref={listRef} className='scroll-list'>
@@ -91,11 +92,11 @@ const ScrollX: React.FC<ScrollXEnhancedProps> = (props) => {
             </div>
           </div>
           <div className='next-button' onClick={scrollNext}>
-            {rightArraw}
+            {rightArrow}
           </div>
         </div>
       </ScrollXContainer>
-    </ScollXContext.Provider>
+    </ScrollXContext.Provider>
   )
 }
 

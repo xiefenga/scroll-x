@@ -2,7 +2,7 @@ import React from 'react'
 import { ReactNode } from 'react'
 import { Fn } from '@/types/util'
 
-export interface ScollXContextValue {
+export interface ScrollXContextValue {
   reset: Fn
   updateScrollState: Fn
 }
@@ -11,8 +11,8 @@ export interface ScrollXProps {
   blockWith: number
   style?: React.CSSProperties
   gap?: number
-  leftArraw: ReactNode
-  rightArraw: ReactNode
+  leftArrow: ReactNode
+  rightArrow: ReactNode
 }
 
 export interface ScrollXContainerProp {
